@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&family
+    =Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@200&family=
+    Mochiy+Pop+P+One&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src = 'script.js'></script>
+    <title>JOKENPO</title>
+</head>
+<body>
+    <header>
+        <h1>JOKENPO</h1>
+        <nav>
+            <ul class = 'nav'>
+                <li><a>Como jogar</a></li>
+                <li><a>História do Jogo</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <div class = 'nomes'>
+        </div>
+        <div class = 'display'>
+            <div class = 'batalha' id = 'display-player'>
+                <P>PLAYER</p>
+                <p id = 'player'></p>
+                <p class = 'jogada'></p>
+            </div>
+            <div class = 'batalha'>
+                <p>CPU</p>
+                <p id = 'cpu'></p>
+                <p class = 'jogada'></p>
+            </div>            
+        </div>
+        <div class = 'comandos'>
+            <ul>
+                <li><button onclick = "textoPlayer(0)" >PEDRA</button></li>
+                <li><button onclick = "textoPlayer(1)">PAPEL</button></li>
+                <li><button onclick = "textoPlayer(2)">TESOURA</button></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

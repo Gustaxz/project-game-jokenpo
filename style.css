@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border: solid 2px black;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(10vw + 5px);
+}
+
+nav {
+    padding: 8px 0;
+    width: 100%;
+    background: black;
+}
+
+.nav {
+    padding: 0 70px 0 70px;
+    max-width: 940px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: white;
+}
+
+.nav li {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.display { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.batalha {
+    display: inline-block;
+    border: solid 3px black;
+    border-radius: 15px;
+    margin: 100px 3% 0;
+    height: 25em;
+    width: 40%;
+}
+
+.batalha p:first-child {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+#player, #cpu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.jogada {
+    position: relative;
+    top: 15%;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.comandos {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 740px;
+}
+
+.comandos li {
+    list-style: none;
+    display: inline;
+}
+
+.comandos button {
+    transition: all 200ms;
+    background: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 4px 1%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 3%;
+
+}
+
+.comandos button:hover {
+    transform: scale(1.1);
+}
+
+.comandos button:active {
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: calc(15vw + 5px);
+    }
+
+    .nav {
+        padding: 0 30px 0 30px;
+    }
+
+    .batalha p:first-child {
+        font-size: 7vh;
+    }
+}
+
+
+
+
